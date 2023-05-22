@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journalisation quotidienne</title>
+    <link 
+        rel =" Icon"
+        type ="image/x-icon"
+        href="favicon.ico"
+        >
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* table rules */
+        table {
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(222, 125, 231);
+        }
+
+        td {
+            padding: 4px 16px;
+        }
+    </style>
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.0.0.min.js"></script>
+</head>
+
+<body>
+    <h1> Journalisation page Web</h1>
+
+    <!--1ere partie conversion de fichier CSV 
+
+    <h2> 1ere partie : conversion de fichier CSV</h2>
+
+    <h3> Source Data : journalisation d'Etic pour client Estandon </h3>
+
+    <p> 1ere vue de Data </p>-->
+
+     <p id="csv"></p> 
+
+    <!-- 2eme partie CSV vers arrat java JASON
+    
+    <h2> 2eme partie : CSV plus organise </h2>
+    
+    <p> Données  (object):</p>-->
+
+    <p id="json"></p>
+    
+
+    <!-- 3eme partie CSV vers Tableau de data-->
+    
+    <h2>  Tableau des données : </h2>
+    
+    <p> Tableau des données en HTML  (object):</p>
+
+    <p>HTML Table (object):</p>
+
+    <div id="container"></div>
+
+
+     <!-- 4eme partie : Tracé des données -->
+
+     <h2> Tracé des données sur un tableau </h2>
+
+     <p>Exemple : Température en fonction du temps passé </p>
+ 
+     <div id="myPlot" style="width: 1000px; height: 400px;"></div>
+
+
+     <p>Exemple : Température en fonction du temps passé </p>
+
+
+
+     <div id="myPlot0" style="width: 1000px; height: 400px;"></div>
+
+
+
+    <!-----partie java script-->
+    <script src="main.js"></script>
+
+    <!--<a href = "index.html" > Visit my contact page here! </a>-->
+
+    
+</body>
+</html>
